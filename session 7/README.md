@@ -16,13 +16,13 @@ I. Model_001
 
     CONFIG:
 
-[ ] apply train transformation
+- [ ] apply train transformation
 
-[ ] batchnorm 
+- [ ] batchnorm 
 
-[ ] dropout
+- [ ] dropout
 
-[X] 15 epoch
+- [X] 15 epoch
     
     TARGETS:
         
@@ -42,13 +42,13 @@ II. Model_002
 
     CONFIG:
 
-[ ] apply train transformation
+- [ ] apply train transformation
 
-[X] no batchnorm 
+- [X] no batchnorm 
 
-[ ] no dropout
+- [ ] no dropout
 
-[X] 15 epoch
+- [X] 15 epoch
 
     TARGETS:
         
@@ -67,13 +67,13 @@ III. Model_003
 
     CONFIG:
 
-[ ] apply train transformation
+- [ ] apply train transformation
 
-[X] batchnorm 
+- [X] batchnorm 
 
-[X] dropout=0.01
+- [X] dropout=0.01
 
-[X] 15 epoch
+- [X] 15 epoch
 
     TARGETS:
         
@@ -94,13 +94,13 @@ VI. Model_006
 
     CONFIG:
 
-[ ] apply train transformation
+- [ ] apply train transformation
 
-[X] batchnorm 
+- [X] batchnorm 
 
-[X] dropout=0.1
+- [X] dropout=0.1
 
-[X] 15 epoch
+- [X] 15 epoch
 
     TARGETS:
         
@@ -121,13 +121,13 @@ VII. Model_007
 
     CONFIG:
 
-[X] apply train transformation
+- [X] apply train transformation
 
-[X] batchnorm 
+- [X] batchnorm 
 
-[X] dropout=0.01
+- [X] dropout=0.01
 
-[X] 15 epoch
+- [X] 15 epoch
 
     TARGETS:
         
