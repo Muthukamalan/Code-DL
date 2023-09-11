@@ -12,7 +12,7 @@ Objective
 
 ## Lessons Learned from Delta Updates
 
-I. Model_001
+### I. Model_001
 
     CONFIG:
 
@@ -38,7 +38,7 @@ I. Model_001
 
 
 
-II. Model_002
+### II. Model_002
 
     CONFIG:
 
@@ -63,7 +63,7 @@ II. Model_002
 - adding batch norm to batch norm gives exponential returns
 
 
-III. Model_003
+### III. Model_003
 
     CONFIG:
 
@@ -90,7 +90,7 @@ III. Model_003
 
 
 
-VI. Model_006
+### VI. Model_006
 
     CONFIG:
 
@@ -117,7 +117,7 @@ VI. Model_006
 
 
 
-VII. Model_007
+### VII. Model_007
 
     CONFIG:
 
