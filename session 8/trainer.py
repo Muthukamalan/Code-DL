@@ -1,11 +1,17 @@
 from tqdm import tqdm 
+from utils import get_device
+
+device = get_device()
 
 class Trainer:
     def __init__(self,model,train_loader,optimizer,criterion,device) -> None:
         self.train_losses = []
         self.train_accuracies=[]
         self.epoch_train_accuracies=[]
-        self.model = model.to(device)
+        if device=='cuda':
+            self.model = model.cuda()
+        else:
+            self.model = model
         self.train_loader= train_loader
         self.optimizer = optimizer
         self.criterion =criterion

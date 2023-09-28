@@ -1,7 +1,7 @@
-
 import torch
 from typing import List
 from torch import Tensor
+from utils import get_device
 
 device = get_device()
 
@@ -9,7 +9,10 @@ class Tester:
     def __init__(self,model,device,test_loader,criterion) -> None:
         self.test_losses = []
         self.test_accuracies = []
-        self.model = model.to(device)
+        if device=='cuda':
+            self.model = model.cuda()
+        else:
+            self.model = model
         self.test_loader = test_loader
         self.criterion = criterion
         self.device = device
@@ -24,12 +27,12 @@ class Tester:
 
         # no backpropagation
         with torch.no_grad():
-            for inputs,targets in self.test_loader:
-                inputs = inputs.to(self.device)
+            for inputs_,targets in self.test_loader:
+                inputs_ = inputs_.to(self.device)
                 targets = targets.to(self.device)
 
                 # prediction
-                outputs = self.model(inputs)
+                outputs = self.model(inputs_)
                 #calc loss
                 loss = self.criterion(outputs,targets)
 
