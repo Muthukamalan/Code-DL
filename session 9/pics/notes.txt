@@ -1,0 +1,2 @@
+when/how to use Image Augmentation
+https://towardsdatascience.com/when-conventional-wisdom-fails-revisiting-data-augmentation-for-self-driving-cars-4831998c5509
