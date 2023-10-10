@@ -5,7 +5,7 @@ import torch
 
 class DepthwiseConvLayer(nn.Module):
     def __init__(self,inc,outc,k,s,p,dp_rate)->None:
-        super(DepthwiseConvLayer,self).__init__(self)
+        super(DepthwiseConvLayer,self).__init__()
         self.layer = nn.Sequential(
             nn.Conv2d(in_channels=inc,out_channels=inc,groups=inc,kernel_size=3,stride=s,padding=p,bias=False),
             nn.Conv2d(in_channels=inc,out_channels=outc,kernel_size=1,padding=p,bias=False)
