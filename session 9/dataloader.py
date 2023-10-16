@@ -51,6 +51,8 @@ class CIFAR10DataLoader:
 
         self.dataloader_args = {"shuffle": True, "batch_size": self.batch_size}
         if is_cuda_available:
+            self.batch_size = 512
+            self.dataloader_args['batch_size']  = 512
             self.dataloader_args["num_workers"] = 8
             self.dataloader_args["pin_memory"] = True
         self.classes: List[str] = [

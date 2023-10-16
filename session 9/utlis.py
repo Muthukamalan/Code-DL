@@ -20,10 +20,10 @@ def denormalize(img):
 
 
 def get_rows_cols(num: int) -> Tuple[int, int]:
-    cols = floor(sqrt(num))
-    rows = ceil(num / cols)
+    cols = np.floor(np.sqrt(num))
+    rows = np.ceil(num / cols)
 
-    return rows, cols
+    return int(rows), int(cols)
 
 
 def visualize_data(
