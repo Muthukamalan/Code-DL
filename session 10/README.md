@@ -1,4 +1,5 @@
 # Objective
+```
 Write a custom ResNet architecture for CIFAR10 that has the following architecture:
     - PrepLayer - Conv 3x3 s1, p1) >> BN >> RELU [64k]
     - Layer1:
@@ -29,7 +30,7 @@ Uses this transform -RandomCrop 32, 32 (after padding of 4) >> FlipLR >> Followe
 Batch size = 512
 Use ADAM, and CrossEntropyLoss
 Target Accuracy: 90%
-
+```
 [custom model reference](https://myrtle.ai/learn/how-to-train-your-resnet-8-bag-of-tricks/)
 
  
